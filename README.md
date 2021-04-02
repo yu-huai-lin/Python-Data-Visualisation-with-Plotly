@@ -87,7 +87,7 @@ fig.update_layout(
 
 fig.show()
 ```
-# ---
+
 
 #### 1.2 Faceted Line plot -  Cancellation Rate by Hotel
 
@@ -168,7 +168,7 @@ fig.show()
 
 ### Count Plot 
 
-####bookings & cancellations by hotel type
+#### bookings & cancellations by hotel type
 
 ![](/images/count.png)
 
@@ -242,7 +242,7 @@ fig.show()
 
 ### Pie chart 
 
-### Bookings by Market Segment
+#### Bookings by Market Segment
 
 ![](/images/pie_1.png)
 
@@ -291,7 +291,7 @@ fig.show()
 
 
 ### Box Plot 
-####Lead time distribution by cancellation status and hotel type
+#### Lead time distribution by cancellation status and hotel type
 
 
 ![](/images/box_1.png)
