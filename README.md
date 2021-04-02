@@ -1,6 +1,6 @@
 # Python Data Visualisation with Plotly
 
-Plotly and plotly Express is really convenient for building visualisations in python. It takes care of a lot of painful axes formatting while allowing easy ustomisation. It also has an interative interface that allows you to zoom in/out of the charting, which can be embedded in html files. 
+Plotly and plotly Express is really convenient for building visualisations in python. It takes care of a lot of painful axes formatting while allowing easy customisation. It also has an interative interface that allows you to zoom in/out of the charting, which can be embedded in html files. 
 
 In this repository, I will show how I make use of the hotel booking demand dataset play around with plotly while doing EDA
 
@@ -87,7 +87,7 @@ fig.update_layout(
 
 fig.show()
 ```
-
+---
 
 #### 1.2 Faceted Line plot -  Cancellation Rate by Hotel
 
@@ -119,6 +119,8 @@ fig.show()
 
 
 
+
+
 #### 1.3  ADR by Hotel and Deposit Type
 
 ![](/images/line_3.png)
@@ -147,7 +149,7 @@ fig.show()
 
 ### Stacked Bar Chart 
 
-####Monthly bookings and Cancellations
+#### Monthly bookings and Cancellations
 
 ![](/images/bar_1.png)
 
