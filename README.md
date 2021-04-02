@@ -68,6 +68,7 @@ df =df[(df['adr'] < 1000)]
 
 ![](/images/fig1_line.png)
 
+
 ```
 trend_month = df.groupby(['reservation_status_month']).count().reset_index()
 trend_month.sort_values('reservation_status_month', inplace=True)
@@ -86,6 +87,8 @@ fig.update_layout(
 
 fig.show()
 ```
+
+
 #### 1.2 Faceted Line plot -  Cancellation Rate by Hotel
 
 ![](/images/line_2.png)
@@ -114,6 +117,8 @@ fig.update_xaxes(tickangle=90,
 fig.show()
 ```
 
+
+
 #### 1.3  ADR by Hotel and Deposit Type
 
 ![](/images/line_3.png)
@@ -138,7 +143,14 @@ fig.show()
 ```
 
 
-### Stacked Bar Chart - Monthly bookings and Cancellations
+
+
+### Stacked Bar Chart 
+
+####Monthly bookings and Cancellations
+
+![](/images/bar_1.png)
+
 
 ```
 bc = df.groupby(['reservation_status_month', 'reservation_status']).size().reset_index().rename(columns={0: 'count_bookings'})
@@ -150,11 +162,15 @@ fig.update_layout(xaxis_title="month", yaxis_title="bookings",font=dict(family="
 fig.show()
 ```
 
-![](/images/bar_1.png)
 
-### Count Plot - bookings & cancellations by hotel type
+
+### Count Plot 
+
+####bookings & cancellations by hotel type
 
 ![](/images/count.png)
+
+
 
 ```
 df['bin'] = pd.cut(df['lead_time'], [0, 50, 100,200, 300, 400, 500, 600, 700, 800], 
@@ -180,9 +196,11 @@ fig.update_xaxes(ticks="outside",
 fig.show()
 ```
 
-### Multi chart type - Bar + line with sedondary y axis
 
-#### Monthly Bookings & Daily Avg Hotel Rate
+
+### Multi chart type 
+#### Bar + line with sedondary y axis - Monthly Bookings & Daily Avg Hotel Rate
+
 ![](/images/multi_1.png)
 
 
@@ -218,7 +236,11 @@ fig.update_layout(font=dict(family="Avenir"))
 fig.show()
 ```
 
-### Pie chart - Bookings by Market Segment
+
+
+### Pie chart 
+
+### Bookings by Market Segment
 
 ![](/images/pie_1.png)
 
@@ -231,7 +253,10 @@ fig.show()
 
 ```
 
-#### Donut chart - Bookings by Market Segment and hotel type
+
+### Donut chart 
+
+#### bookings by Market Segment and hotel type
 
 ![](/images/donut_1.png)
 
@@ -262,7 +287,10 @@ fig.show()
 ```
 
 
-### Box Plot - Lead time distribution by cancellation status and hotel type
+
+### Box Plot 
+####Lead time distribution by cancellation status and hotel type
+
 
 ![](/images/box_1.png)
 
@@ -277,8 +305,9 @@ fig.show()
 ```
 
 
-### Scatter Plot
 
+### Scatter Plot
+#### Relaitonship between leadtime and ADR
 
 ![](/images/scatter_1.png)
 
