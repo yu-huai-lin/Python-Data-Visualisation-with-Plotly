@@ -1,6 +1,6 @@
 # Python Data Visualisation with Plotly
 
-Plotly and plotly Express is really convenient for building visualisations in python. It takes care of a lot of painful axes formatting while allowing easy customisation. It also has an interative interface that allows you to zoom in/out of the charting, which can be embedded in html files. 
+Plotly and Plotly Express is really convenient for building visualisations in python. It takes care of a lot of painful axes formatting while allowing easy customisation. It also has an interative interface that allows you to zoom in/out of the charting, which can be embedded in html files. 
 
 In this repository, I will show how I make use of the hotel booking demand dataset play around with plotly while doing EDA
 
