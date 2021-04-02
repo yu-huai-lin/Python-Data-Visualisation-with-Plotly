@@ -87,7 +87,7 @@ fig.update_layout(
 
 fig.show()
 ```
---
+# ---
 
 #### 1.2 Faceted Line plot -  Cancellation Rate by Hotel
 
